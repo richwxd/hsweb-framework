@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <title>hsweb 企业后台管理系统基础框架</title>
+    <title>hsweb 开源java基础平台</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="baidu-site-verification" content="yJx06P8elM"/>
     <meta name="website" content="http://www.hsweb.me"/>
@@ -16,8 +16,8 @@
 </head>
 <body>
 <section class="page-header">
-    <h1 class="project-name">hsweb企业后台管理系统基础框架</h1>
-    <h2 class="project-tagline"><b>hsweb</b>是一个用于快速构建后台管理系统的基础框架,基于java8,spring-boot,mybatis...</h2>
+    <h1 class="project-name">hsweb开源java基础平台</h1>
+    <h2 class="project-tagline"><b>hsweb</b>是一个完全开源的用于快速构建后台管理系统的基础框架,基于java8,spring-boot,mybatis...</h2>
     <a target="_blank" href="https://github.com/hs-web/" class="btn">项目地址</a>
     <a href="#%E6%BC%94%E7%A4%BA" class="btn">在线演示</a>
     <a target="_blank" href="https://github.com/hs-web/hsweb-framework/wiki/%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C"
@@ -35,115 +35,7 @@
        href="https://insight.io/github.com/hs-web/hsweb-framework"><img
             id="insight" alt="insight.io" src="https://www.insight.io/repoBadge/github.com/hs-web/hsweb-framework"></a>
 </section>
-<section class="main-content">
-    <h3>
-        <a id="业务功能" class="anchor" href="#%E4%B8%9A%E5%8A%A1%E5%8A%9F%E8%83%BD" aria-hidden="true"><span
-                aria-hidden="true" class="octicon octicon-link"></span></a>业务功能</h3>
-    <ol>
-        <li>权限管理: 权限,菜单,用户,角色.</li>
-        <li>组织架构: 机构-部门-岗位-人员.</li>
-        <li>数据字典: 字典配置,支持复杂格式解析.</li>
-        <li>脚本管理: 动态脚本,支持javascript,groovy,java动态编译执行.</li>
-        <li>表单管理: 动态表单,可视化设计表单,自动生成数据库以及系统权限.无需重启直接生效.</li>
-        <li>数据库维护: 在线维护数据库,修改表结构,执行sql.</li>
-        <li>数据源管理: 动态多数据源.</li>
-        <li>定时任务: 配置定时任务,使用动态脚本编写任务内容.</li>
-        <li>OAuth2.0: 客户端,服务端集成,开放接口更简单</li>
-        <li>工作流: Flowable 基本功能集成</li>
-        <li>代码生成器: 在线生成代码,打包下载.可自定义模板.</li>
-    </ol>
-
-    <h3>
-        <a id="框架功能" class="anchor" href="#%E6%A1%86%E6%9E%B6%E5%8A%9F%E8%83%BD" aria-hidden="true"><span
-                aria-hidden="true" class="octicon octicon-link"></span></a>框架功能</h3>
-
-    <ol>
-        <li>全局restful+json,前后分离.</li>
-        <li>通用dao,service,controller类,增删改查直接继承即可.</li>
-        <li>dsl动态条件,复杂sql条件,一行代码搞定.</li>
-        <li>灵活的权限配置,session,token自定义,支持RBAC+数据权限控制.</li>
-        <li>分布式锁,集群session共享支持</li>
-        <li>动态多数据源,支持数据源热加载,热切换,支持分布式事务.</li>
-        <li>websocket支持.</li>
-        <li>定时调度支持,可在页面配置定时任务,编写任务脚本执行.</li>
-        <li>OAuth2.0 客户端,服务端支持.</li>
-        <li>在线数据库维护,支持事务.</li>
-        <li>动态表单功能,可在前端设计表单,动态生成数据库表,提供统一的增删改查接口.</li>
-        <li>在线代码生成器,可自定义模板.</li>
-        <li>统一文件上传接口,支持秒传,静态文件上传.</li>
-    </ol>
-
-    <h3>
-        <a id="演示" class="anchor" href="#%E6%BC%94%E7%A4%BA" aria-hidden="true">
-            <span aria-hidden="true" class="octicon octicon-link"></span>
-        </a>演示
-    </h3>
-
-    <ol>
-        <p>小霸王服务器承受不住小伙伴们的压力,请下载源码本地运行demo!</p>
-        <!--<li>示例:<a target="_blank" href="http://demo.hsweb.me">demo.hsweb.me</a></li>-->
-        <!--<li>测试用户:test (test2,test3,test4....) 密码:123456</li>-->
-        <p> 2.x版本演示项目源码:<a target="_blank" href="https://github.com/hs-web/hsweb-demo">hsweb-demo</a></p>
-        <p> 3.0版本演示项目源码:<a target="_blank" href="https://github.com/hs-web/hsweb3-demo">hsweb3-demo</a></p>
-    </ol>
-
-    <h3>
-        <a id="技术选型" class="anchor" href="#%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B" aria-hidden="true"><span
-                aria-hidden="true" class="octicon octicon-link"></span></a>技术选型</h3>
-
-    <p>第三方:</p>
-
-    <ol>
-        <li>MVC:<a target="_blank" href="https://github.com/spring-projects/spring-boot">spring-boot</a>.
-            开箱即用,学习成本低,部署方便(main方法运行).
-        </li>
-        <li>ORM:<a target="_blank" href="https://github.com/mybatis/mybatis-3">mybatis</a>. 配置灵活,简单方便.</li>
-        <li>JTA:<a target="_blank" href="https://www.atomikos.com/">atomikos</a>. 分布式事务,多数据源事务全靠他.</li>
-        <li>Cache:<a target="_blank"
-                     href="https://github.com/spring-projects/spring-framework/tree/master/spring-context/src/main/java/org/springframework/cache">spring-cache</a>.
-            统一接口,注解使用,simple,redis... 自动切换.
-        </li>
-        <li>Redisson:<a target="_blank" href="https://github.com/redisson/redisson/wiki">redis客户端最佳选择</a>.</li>
-        <li>Lombok:<a target="_blank" href="https://projectlombok.org/">简化代码</a>.</li>
-        <li>Swagger:<a target="_blank" href="https://swagger.io/">文档生成更方便</a>.</li>
-    </ol>
-
-    <p>自家:</p>
-
-    <ol>
-        <li>
-            <a target="_blank" href="https://github.com/hs-web/hsweb-commons">hsweb-commons</a> :通用工具类
-        </li>
-        <li>
-            <a target="_blank" href="https://github.com/hs-web/hsweb-easy-orm">hsweb-easy-orm</a> :为动态表单设计的orm框架
-        </li>
-        <li>
-            <a target="_blank" href="https://github.com/hs-web/hsweb-expands/tree/master/hsweb-expands-compress">hsweb-expands-compress</a>
-            :文件压缩，解压操作
-        </li>
-        <li>
-            <a target="_blank" href="https://github.com/hs-web/hsweb-expands/tree/master/hsweb-expands-office">hsweb-expands-office</a>
-            :office文档操作( excel读写，模板导出，word模板导出)
-        </li>
-        <li>
-            <a target="_blank" href="https://github.com/hs-web/hsweb-expands/tree/master/hsweb-expands-request">hsweb-expands-request</a>:
-            请求模拟(http,ftp)
-        </li>
-        <li>
-            <a target="_blank" href="https://github.com/hs-web/hsweb-expands/tree/master/hsweb-expands-script">hsweb-expands-script</a>:动态脚本,动态编译执行java,groovy,javascript,spel,ognl....
-        </li>
-        <li>
-            <a target="_blank" href="https://github.com/hs-web/hsweb-expands/tree/master/hsweb-expands-shell">hsweb-expands-shell</a>:shell执行
-        </li>
-        <li>
-            <a target="_blank" href="https://github.com/hs-web/hsweb-expands/tree/master/hsweb-expands-template">hsweb-expands-template</a>:各种模板引擎
-        </li>
-    </ol>
-    <h3>
-        <a id="source" class="anchor" href="#source" aria-hidden="true">
-            <span aria-hidden="true" class="octicon octicon-link"></span>
-        </a>项目源代码
-    </h3>
+  
     <div style="width: 100%;">
         <div class="github-widget" data-repo="hs-web/hsweb-framework"></div>
         <br/>
